@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VkMusic</title>
+	<link rel="stylesheet" href="css/vkstyles.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="col-left">
+		<div class="header">
+			<div class="logo">
+				<div class="logo-icon fa fa-music"></div>
+				<div class="logo-text">VkMusic</div>
+				<div class="logo-version">v0.1</div>
+			</div>
+
+			<div class="player-box">
+				<div class="play-button">
+					<i class="play-icon fa fa-play fa-lg"></i>
+				</div>
+
+				<div class="current-track">
+					Rammstein - Du hast
+				</div>
+
+				<div class="volume-button">
+					<i class="volume-icon fa fa-signal fa-lg"></i>
+				</div>
+
+				<audio id="audio" src="music.mp3" volume="0.5"></audio>
+			</div>
+		</div>
+
+		{{{body}}}
+
+	</div>
+
+<div class="placeholder">
+	<div class="help">
+		Space - "Play/Pause";<br>
+		Up/Down - "Sound level"<br>
+		Left/Right - "Next/Prev Song"<br>
+	</div>
+</div><!--PLACEHOLDER-->
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="js/player.js"></script>
+<!--	<script src='js/audiojs/audio.min.js'></script>-->
+
+</body>
+</html>

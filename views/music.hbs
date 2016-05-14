@@ -1,0 +1,22 @@
+<div id="music-list">
+	{{#if response.items}}
+		{{#each response.items}}
+		<div class="track" src="{{url}}">
+		<div class="track-icon-box">
+			<i class="track-icon fa fa-sm fa-music"></i>
+		</div>
+
+		<div class="track-name" name="{{artist}} - {{title}}">
+			{{artist}} - {{title}}
+		</div>
+
+		<div class="track-duration">
+			{{duration}}
+		</div>
+	</div>	
+		{{/each}}
+		{{else}}
+		<h1>{{response}}</h1>
+		{{/if}}
+	
+</div>

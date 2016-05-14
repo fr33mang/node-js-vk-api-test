@@ -1,0 +1,166 @@
+body{
+	overflow-y: scroll;
+	overflow-x: hidden; 
+	font-family: sans-serif;
+	margin: 0;
+	height: auto;
+}
+
+.col-left{
+	padding: 0;
+	margin: 0;
+	width: 420px;
+	float: left;
+}
+
+.header{
+	height: 160px;
+	background-color: #00206A;
+}
+
+.logo{
+	color: white;
+	font-size: 32px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-left: 110px;
+}
+
+.logo-icon{
+	float: left;
+	padding-right: 9px;
+	color: #99A5C3;
+	padding-top: 7px;
+}
+
+.logo-text{
+	float: left;
+	font-weight: bold;
+	padding-right: 9px;
+}
+
+.logo-version{
+	color: #99A5C3;
+	font-size: 19px;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+.player-box{
+	margin-left: 25px;
+	width: 370px; 
+	background-color: #CCCCCC;
+	height: 40px;
+}
+
+.play-button{
+	float: left;
+	cursor: pointer;
+	height: 100%;
+}
+
+.play-icon{
+	padding: 12px 10px 10px 10px;
+	height: 18px;
+}
+
+.current-track{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+		overflow: hidden;
+	float: left;
+	width: 280px;
+	padding-top: 10px;
+	
+}
+
+.volume-button{
+	color: grey;
+	float: right;
+	height: 100%;
+	cursor: n-resize;
+}
+
+.volume-icon{
+	padding: 12px 10px 10px 10px;	
+}
+
+#music-list{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 470px;
+}
+
+.track{
+	width: 380px;
+	padding: 20px;
+	cursor: pointer;
+	height: 20px;
+}
+
+.track-icon-box{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: 2px;
+	color: #B0B0B0;
+}
+
+.track-icon{
+	display: block;
+	position: relative;
+	padding-left: 2px;
+}
+
+.track.active > .track-name{
+	color: #002A89;
+	font-weight: bold;
+}
+
+.track.active > .track-icon-box{
+	color: #FCFDFF;
+	background-color: #50629F;
+	border-radius: 10px;
+}
+
+.track.active > .track-duration{
+	color: #B4C0DC;
+}
+
+.track-name{
+	position: relative;
+	width: 290px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+		overflow: hidden;
+	padding-left: 35px;
+	float: left;
+}
+
+.track-duration{
+	float: right;
+	color: #B0B0B0;
+}
+
+.placeholder{
+	background-image: url("/img/wall.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 630px;
+	overflow: hidden;
+}
+
+.help{
+	color : white;
+	padding: 20px;
+	font-weight: bold;
+	font-style: italic;
+	width: 290px;
+}
+
+@media (max-width: 767px) {
+
+	.placeholder{
+
+	}
+}
