@@ -1,4 +1,4 @@
-# node-js-vk-api-test
+# VK API Based Music Player
 
 ### To run this application:
 1. Create a new app [on vk.com](https://vk.com/dev). Set the application type to 'web-site', set the site url and the redirect uri.
